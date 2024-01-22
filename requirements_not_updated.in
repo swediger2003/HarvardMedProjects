@@ -1,0 +1,29 @@
+blosc @ file:///home/conda/feedstock_root/build_artifacts/python-blosc_1666949452865/work
+Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_1695989787169/work
+build==1.0.3
+certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1700303426725/work/certifi
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1698833585322/work
+click==8.1.7
+contourpy==1.1.1
+cycler==0.12.1
+fonttools==4.47.2
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1701026962277/work
+importlib-metadata==7.0.1
+importlib-resources==6.1.1
+intern @ file:///home/conda/feedstock_root/build_artifacts/intern_1619183062063/work
+kiwisolver==1.4.5
+matplotlib==3.7.4
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1687808301083/work
+packaging==23.2
+pillow==10.2.0
+pip-tools==7.3.0
+pyparsing==3.1.1
+pyproject_hooks==1.0.0
+PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1661604839144/work
+python-dateutil==2.8.2
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1684774241324/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+tomli==2.0.1
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1699933488691/work
+zipp==3.17.0
+zmesh @ file:///home/conda/feedstock_root/build_artifacts/zmesh_1699036368231/work
