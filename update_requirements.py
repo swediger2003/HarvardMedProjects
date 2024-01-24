@@ -1,7 +1,7 @@
 # To get an updated requirements.txt file, 
 # pip freeze > requirements_not_updated.in
 # python update_requirements.py
-# pip-compile requirements.in
+# pip install -r requirements.txt
 
 
 # update_requirements.py
