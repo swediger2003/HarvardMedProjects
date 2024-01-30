@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+import gspread
+
+#credentials for service account
+credentials = {
+  "type": "service_account",
+  "project_id": "jupyter-sheets-412818",
+  "private_key_id": "e50a57eeac41bbe044b2008c2039e45320dbfa3d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDz+F7HmKxR+lpM\nasTDOHFtT+a2dMTAbAD4bFOKsAPP0v1xxwwQqeiXfVhkQBRt88gtiqOtjGCF+B/M\nRCdXt7LTpQ5Ekr1Xl2BAkuxszElT9BU2KYTw0A48q64TZxmNHkn7SxEr4+jPTSOM\nAenyQlL2GfBszrpPABQeYWRAncr6gWWJ++gUPHyXmmXRDIoZG97SEvygT2Domg4u\nL/09Or03aAb2qeWwLf4GNWPbwA1i4T7p2br6x+MrfJcmkuRAkyki7XExpVxfIrs3\nDa3LK39QH90ENEYzu+N7HgrJYBfLrw336cHFhIVHBoZBb27sygoyHQEHTAVL/t1I\nPzXowzUVAgMBAAECggEAJhAL3swHpnU5UqQdtUTAaDOHun5BQVwYUqm5PEagcZ4T\nWIWbcPDGjvaerGqq7/SRYzmMC8Qo6FMryCyh5AzkOMzkNaKcfmaUPRQvD/0B5mKK\n+fuZorsdstgovRzgCaToxJc+Q0C4I7op35Vfhcz/MHzKMSTs6u0Hi9iEpugiBi7i\nmlTat1VMKiETOkyUzcHyemp8lT/E6KasFsEAcvqoQir69cAw6mEKhfr8sT/6SWFD\nFZmI2rZNHbjF4iyaWmybw5iutEqXrX+n6D/ujd2cRIfWOn0dGt/xlYlesxo+zCvH\npUkCU9iagHjuFSrrSao4d7qLr48bZxLa4+eKzCV3SQKBgQD+3itqEc36USSWoP9U\nvM/etQiz3hinRegbD0NS66jCAYeVDDFJeJoCLpVSW1KkaDI8OZ6pXjJQ6xxuDKN6\nDHecoZWc8ylHZcv7R2UrsZnXBgCiRl3bS6qMtpprKBNpOHMYbzqkADWZmtFXdR7z\nsMPXizvlHDY/6GsVvaygmsSohwKBgQD1Dc7dFJvKDAqugSC1xxaH+XZ4ow7tot9d\nqU3uTeMWpceuARfIKy1fzLzlC7xj0iagxS4SQacNQHH2uAbFHS69Ur7XrMR1LrO8\nt4/EiaqCB1pMhtacg7DzJetjww9PJ7m3+1bgjsUfSizW+xe8Ksb/+i3BUDd20Rn7\nN2MgwS1IgwKBgCS9E9cDYASwQ6zu4j9txC0fPXToE/ewzQdxiMvgKoBkxg2HJ2em\n2dRssJuhjGUkm/EwgR169ZfSfFOkwL/sIiXS6QUpzA59rwy2uu+0dy+Wruq1Z/wf\niSMlg1bk/P9S4sxn5DUVzqQou/p2aJLKLUDZ0jVxfqRxtVX59HNmO+jrAoGAQYC1\nYOcXVYSufkLJ6Y0T+ri18D01ylOU/UY6LI7pOq6Jl3t3TewsrsTdYSQn8U7FQIg0\nbnDaJHKrg9VhCeNpEPZDSQdHZENdi/5NEa3yw9sPShFo4GFbNUNXjk0flHr766/l\nYxUGn/yFy9lGWOfeVaIcBOZaTQpLtZjyiFjar90CgYEA6Hhut4tuCHO6YTCZKEOz\nzTgxngdhLGlccqZj8PeSiDDCBSE7aFg3bJN/WajzpIHoS/ROucfi1sBMmUaXFBqK\nGTqL5yVOjolgacUn4supAEWyQbii7yXu1DasSqSHxNI55QTq5Wwe9iBJlUcKrG3v\nwCpTc62CwtrL+TfdjEd2QgQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cole-982@jupyter-sheets-412818.iam.gserviceaccount.com",
+  "client_id": "110013866146632534793",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cole-982%40jupyter-sheets-412818.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
+#loads service account using credentials
+service_acct = gspread.service_account_from_dict(credentials)
+
+sheet = service_acct.open("EM_Reconstructions_CG_SE")
+
+#current_sheet = sheet.worksheet('Synapses onto pc_3')
+
+#data = current_sheet.batch_get(['H5:H1000', 'K5:K1000'])
+#data
