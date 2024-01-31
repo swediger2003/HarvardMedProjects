@@ -1,5 +1,8 @@
 # HarvardMedProjects
-Projects Worked On while at Harvard Medical School
+Projects Worked On while at Harvard Medical School<br /><br />
+**Authors**:<br />
+Sean Ediger<br />
+Cole Gaynor<br />
 
 # Synapse_Automation Documentation
 This file is designed to analyze and visualize neuron connectivity using the NetworkX library and visualize the results. The code performs the following tasks:
