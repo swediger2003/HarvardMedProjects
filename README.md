@@ -19,7 +19,7 @@ seaborn
 networkx
 
 
-## Usage
+### Usage
 Loading Network Graph:
 
 import networkx as nx
