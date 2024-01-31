@@ -1,6 +1,6 @@
 # HarvardMedProjects
-Projects Worked On while at Harvard Medical School<br />
-Authors:
+Projects Worked On while at Harvard Medical School<br /><br />
+**Authors**:
 
 Sean Ediger<br />
 Cole Gaynor<br />
