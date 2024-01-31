@@ -20,7 +20,7 @@ networkx
 
 
 ### Usage
-Loading Network Graph:
+**Loading Network Graph**:<br />
 
 import networkx as nx<br />
 fname = 'db_mli_pc_231209_v2.gz'<br />
