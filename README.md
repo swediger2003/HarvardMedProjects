@@ -10,13 +10,13 @@ Defines functions to extract and analyze connections between neurons.
 Provides functions to automate the process of checking and visualizing connections for specific neurons.
 Requirements
 Make sure you have the following libraries installed:
-
-numpy
-openpyxl
-matplotlib
-pandas
-seaborn
-networkx
+<br />
+**numpy**<br />
+**openpyxl**<br />
+**matplotlib**<br />
+**pandas**<br />
+**seaborn**<br />
+**networkx**<br />
 
 
 ### Usage
