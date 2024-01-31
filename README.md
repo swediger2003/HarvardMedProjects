@@ -9,7 +9,7 @@ Loads a cell type database from a CSV file.
 Defines functions to extract and analyze connections between neurons.
 Provides functions to automate the process of checking and visualizing connections for specific neurons.
 Requirements
-Make sure you have the following libraries installed:
+Make sure you have the following libraries installed:<br />
 <br />
 **numpy**<br />
 **openpyxl**<br />
