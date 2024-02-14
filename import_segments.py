@@ -37,7 +37,7 @@ def import_segs_bossDB(x1, x2, y1, y2, z1, z2):
 
 
 # Only works with whole em dataset, not segmentations 
-    # Bounds.(62464, 57600, 1248, 1) 
+    # Bounds.(249600, 230400, 1200, 1) 
 def import_segs_bossDB_cloud(x1, x2, y1, y2, z1, z2):
     try:
         # Create a CloudVolume instance for the specified URL
@@ -58,7 +58,7 @@ def import_segs_bossDB_cloud(x1, x2, y1, y2, z1, z2):
         print(f"An error occurred: {e}")
 
 
-import_segs_bossDB_cloud(0, 100, 0, 100, 0, 15)
+# import_segs_bossDB_cloud(0, 100, 0, 100, 0, 15)
 
 # Don't know what valid ids are/is. Some sort of meshNeuron
 def get_mesh_info(ids):
@@ -80,3 +80,4 @@ def test_get_mesh():
 
 # test_get_mesh()
 # get_mesh_info(11221853145099)
+# help(cv.mesh.get)
